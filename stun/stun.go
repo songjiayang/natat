@@ -1,8 +1,9 @@
 package stun
 
 import (
-	"github.com/gortc/stun"
 	"net"
+
+	"github.com/gortc/stun"
 )
 
 func Ping(bind, stud *net.UDPAddr) (xorAddr *stun.XORMappedAddress, err error) {
@@ -15,7 +16,6 @@ func Ping(bind, stud *net.UDPAddr) (xorAddr *stun.XORMappedAddress, err error) {
 	if err != nil {
 		return
 	}
-
 	defer c.Close()
 
 	message := stun.MustBuild(stun.TransactionID, stun.BindingRequest)

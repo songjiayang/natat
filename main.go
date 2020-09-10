@@ -2,12 +2,13 @@ package main
 
 import (
 	"flag"
-	gostun "github.com/gortc/stun"
-	"github.com/songjiayang/natat/assert"
-	"github.com/songjiayang/natat/stun"
 	"log"
 	"net"
 	"strings"
+
+	gostun "github.com/gortc/stun"
+	"github.com/songjiayang/natat/assert"
+	"github.com/songjiayang/natat/stun"
 )
 
 var (
